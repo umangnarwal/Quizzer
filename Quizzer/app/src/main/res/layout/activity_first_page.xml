@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FF037618">
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_margin="8dp"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="7dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="1dp"
+    app:cardElevation="3dp">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_first_page"
+    android:layout_width="match_parent"
+    android:background="#FF8BC34A"
+    android:layout_height="match_parent"
+   >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView2"
+       android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"/>
+
+    <TextView
+        android:padding="10dp"
+        android:textColor="#FF037618"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="25dp"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp">
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1"
+            />
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2"
+            />
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3"
+            />
+        <RadioButton
+            android:textColor="#FFFFFF"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r4"
+            />
+        </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/correct"
+        android:textSize="15dp"
+        android:layout_below="@+id/radio"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:text="next"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:onClick="lock"
+        android:layout_marginTop="470dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginLeft="185dp" />
+    <Button
+        android:text="View Answer"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonp"
+        android:onClick="lock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
+    </RelativeLayout>
